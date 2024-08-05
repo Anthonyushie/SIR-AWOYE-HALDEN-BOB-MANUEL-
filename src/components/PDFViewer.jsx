@@ -9,17 +9,20 @@ function PDFViewer() {
   return (
     <div className="flex flex-col items-center p-2 md:p-8 lg:p-12">
       <h1 className="text-xl md:text-3xl lg:text-4xl font-bold mb-4">PDF Viewer</h1>
-      <div className="w-full max-w-full md:max-w-3xl"> {/* Full width for mobile, restricted for desktop */}
+      <div className="w-full max-w-full md:max-w-5xl"> {/* Increased max width for larger view */}
         <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
-          <Viewer
-            fileUrl={pdfFile}
-            theme="dark"
-            style={{
-              height: 'calc(100vh - 150px)', // Dynamic height
-              width: '100%', // Full width
-              border: 'none', // Remove border
-            }}
-          />
+        <Viewer
+        fileUrl={pdfFile}
+        theme="dark"
+        defaultScale={1.7} // Keep the zoom level at 2.0x
+        style={{
+          height: '100vh', // Increase height to fill the viewport
+          width: '100%', // Use full width
+          margin: '0 auto', // Center the PDF
+          backgroundColor: '#fff', // Set background color to white
+        }}
+      />
+
         </Worker>
       </div>
     </div>
