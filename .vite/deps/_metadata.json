@@ -1,0 +1,31 @@
+{
+  "hash": "4d5d7437",
+  "configHash": "021e1ace",
+  "lockfileHash": "a40ef00b",
+  "browserHash": "92f6040a",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "51e94bd6",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "ddf00665",
+      "needsInterop": true
+    },
+    "@react-pdf-viewer/core": {
+      "src": "../../node_modules/@react-pdf-viewer/core/lib/index.js",
+      "file": "@react-pdf-viewer_core.js",
+      "fileHash": "a5f14764",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-YQDMVGAF": {
+      "file": "chunk-YQDMVGAF.js"
+    }
+  }
+}
