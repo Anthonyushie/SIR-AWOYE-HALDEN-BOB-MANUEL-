@@ -3,7 +3,7 @@ import { Worker, Viewer } from '@react-pdf-viewer/core';
 import { SpecialZoomLevel } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
-import pdfFile from '../../public/bob-manuel-prog.pdf'; // Adjust the path as necessary
+import pdfFile from '../../public/bob-manuel prog.pdf'; // Adjust the path as necessary
 
 function PDFViewer() {
   const [loading, setLoading] = useState(true);
