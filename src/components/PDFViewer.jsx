@@ -7,16 +7,17 @@ import '../App.css'; // Import global CSS file if needed
 
 function PDFViewer() {
   return (
-    <div className="flex flex-col items-center p-4 md:p-8 lg:p-12">
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">PDF Viewer</h1>
-      <div className="w-full max-w-5xl">  {/* Adjusted max-width for larger screens */}
+    <div className="flex flex-col items-center p-2 md:p-8 lg:p-12">
+      <h1 className="text-xl md:text-3xl lg:text-4xl font-bold mb-4">PDF Viewer</h1>
+      <div className="w-full max-w-full md:max-w-3xl"> {/* Full width for mobile, restricted for desktop */}
         <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
           <Viewer
             fileUrl={pdfFile}
             theme="dark"
             style={{
-              height: 'calc(100vh - 150px)', // Height adjustment for visibility
-              width: '100%', // Full width to take up available space
+              height: 'calc(100vh - 150px)', // Dynamic height
+              width: '100%', // Full width
+              border: 'none', // Remove border
             }}
           />
         </Worker>
