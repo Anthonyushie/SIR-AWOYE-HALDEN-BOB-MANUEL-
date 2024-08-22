@@ -6,7 +6,7 @@ import pdfFile from '../assets/Bob Manuel Funeral mass.pdf';
 
 function PDFViewer() {
   // Define different scales for different screen sizes
-  const defaultScale = window.innerWidth < 768 ? 0.8 : 1.7; // 1.0x zoom for mobile, 2.0x for desktop
+  const defaultScale = window.innerWidth < 768 ? 0.8 : 0.8; // 1.0x zoom for mobile, 2.0x for desktop
 
   return (
     <div className="flex flex-col items-center p-2 md:p-8 lg:p-12">
