@@ -2,7 +2,7 @@ import React from 'react';
 import { Worker, Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
-import pdfFile from '../assets/bob-manuel-prog.pdf';
+import pdfFile from '../assets/Bob Manuel Funeral mass.pdf';
 
 function PDFViewer() {
   // Define different scales for different screen sizes
