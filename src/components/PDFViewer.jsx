@@ -10,7 +10,7 @@ function PDFViewer() {
 
   return (
     <div className="flex flex-col items-center p-2 md:p-8 lg:p-12">
-      <h1 className="text-xl md:text-3xl lg:text-4xl font-bold mb-4">PDF Viewer</h1>
+      <h1 className="text-xl md:text-3xl lg:text-4xl font-bold mb-4">PDF Viewer 1</h1>
       <div className="w-full max-w-full md:max-w-5xl">
         <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
           <Viewer
